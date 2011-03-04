@@ -1,0 +1,33 @@
+--- %YAML:1.0
+
+name     : predicate
+version  : 0.1
+status   : alpha
+created  : 2006-11-27
+author   : Toady Codey
+email    : transfire@gmail.com
+homepage : "http://toad.rubyforge.org"
+
+title    : Predicate
+summary  : Experimental logic system w/ clean Ruby syntax
+description: >
+  This is an expiremntal predicate logic system for Ruby.
+  The logic engine is dreafully inefficent, but the
+  main purpose of this expirment is the syntax used which
+  is very clean. It would cool to see this syntax tied
+  to a good backtracker or other solid logic system.
+
+distribute: [ tar.gz ]
+store: '../../pkg'
+
+rubyforge:
+  project : toad
+  username: transami
+  groupid : 2537
+
+tasks:
+  rdoc: !!rdoc
+  package: !!pack
+    exclude: [rdoc, scrap]
+  release: !!release
+
